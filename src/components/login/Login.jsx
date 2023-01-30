@@ -15,7 +15,7 @@ function Login() {
  <div className=' p-5 d-flex  justify-content-center align-items-center  ' style={{width: "450px",height:"650px",backgroundColor:"#ead4c4", color:'#378486'}}>
      <form className='p-2'>
   <div class="mb-3" >
-    <center><h3 style={{}}>Login</h3></center>
+    <center><h3>Login</h3></center>
     <label for="exampleInputEmail1" class="form-label">User ID</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
     <div id="emailHelp" class="form-text">We'll never share your ID with anyone else.</div>

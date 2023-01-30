@@ -2,11 +2,10 @@ import React from 'react'
 
 function home() {
   return (
-    <div style={{ width: "auto", height: "100vh", backgroundColor:"#378486" }}>
-      <div className='d-flex  justify-content-center align-items-center ' style={{ width: "auto", height: "500px"}}>
-
-        <div className=' w-50 d-flex  justify-content-center align-items-center flex-column mt-5  ' style={{ height: "500px", color:'black' }}>
-          <h2>Daily Meals</h2><br />
+    <div className='w-auto vh-100  d-flex justify-content-center align-items-center'>
+      <div className=' border bg-image text-center shadow-1 text-white d-flex justify-content-center align-items-center ' style={{backgroundImage:`url("https://images.pexels.com/photos/2598770/pexels-photo-2598770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")`,width:"700px",height:"auto",backgroundSize:"cover"}} >
+        <div className='bg-dark opacity-25 p-5 d-flex justify-content-center align-items-center ' style={{width:"650px",height:"700px"}}>
+        <h2>Daily Meals</h2><br />
           <label className="form-check-label p-2  " for="flexCheckDefault">
             Breakfast
           </label>
@@ -20,15 +19,11 @@ function home() {
           </label>
           <input className="form-check-input " type="checkbox" value="" id="flexCheckDefault" />
           <button type="button" className="btn btn-secondary mt-3 w-25" >Submit</button>
-
-
         </div>
+
       </div>
-      <div className='d-flex justify-content-around  mt-5 ms-5  ' style={{ height: "500px",width:"auto" }}>
-        
-        <div><button type="button" className="btn btn-secondary" style={{ height: "50px",width:"300px"}} >Daily meals preview</button></div>
-        <div><button type="button" className="btn btn-secondary" style={{ height: "50px",width:"300px" }} >Daily meals Listing</button></div>
-      </div>
+
+    
     </div>
   )
 }
