@@ -8,6 +8,7 @@ import Meal_confirm from './components/home/Meal_confirm'
 
 import './App.css';
 import Dailymeal_listing from './components/home/Dailymeal_listing';
+import New_password from './components/login/New_password';
 
 function App()  {
   return(
@@ -17,7 +18,8 @@ function App()  {
      <Otp/>
      <Home/>
      <Meal_confirm/>
-     <Dailymeal_listing/>
+     <Dailymeal_listing/> 
+     <New_password/>
      </div>
   );
 }

@@ -2,28 +2,82 @@ import React from 'react'
 
 function home() {
   return (
-    <div className='w-auto vh-100  d-flex justify-content-center align-items-center'>
-      <div className=' border bg-image text-center shadow-1 text-white d-flex justify-content-center align-items-center ' style={{backgroundImage:`url("https://images.pexels.com/photos/2598770/pexels-photo-2598770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")`,width:"700px",height:"auto",backgroundSize:"cover"}} >
-        <div className='bg-dark opacity-25 p-5 d-flex justify-content-center align-items-center ' style={{width:"650px",height:"700px"}}>
-        <h2>Daily Meals</h2><br />
-          <label className="form-check-label p-2  " for="flexCheckDefault">
-            Breakfast
-          </label>
-          <input className="form-check-input " type="checkbox" value="" id="flexCheckDefault" />
-          <label className="form-check-label p-2" for="flexCheckDefault">
-            Lunch
-          </label>
-          <input className="form-check-input p-2" type="checkbox" value="" id="flexCheckDefault" />
-          <label className="form-check-label p-2" for="flexCheckDefault">
-            Dinner
-          </label>
-          <input className="form-check-input " type="checkbox" value="" id="flexCheckDefault" />
-          <button type="button" className="btn btn-secondary mt-3 w-25" >Submit</button>
+    <div className=' w-auto vh-100  d-flex justify-content-center align-items-center'>
+      <div className='  ' style={{ color:"#378486", width: "700px", height: "auto", }} >
+        <div className=' bg- p-5  ' style={{ width: "650px", height: "650px" }}>
+        <center>  <h2><u>Todays Meals</u></h2></center>
+
+          <div className='border container d-flex justify-content-center align-items-center' style={{width:"25rem",height:"8rem"}}>
+            <label className="form-check-label me-3"> Breakfast</label>
+            <input class="form-check-input"
+              type="checkbox" id="checkbox1" name="option1" value="good" />
+          </div>
+          <div className='border container d-flex justify-content-center align-items-center' style={{width:"25rem",height:"8rem"}}>
+          <label className="form-check-label me-3"> Lunch</label>
+            <input className="form-check-input "
+              type="checkbox" id="checkbox1" name="option1" value="good"  />
+          </div>
+          <div className='border container d-flex justify-content-center align-items-center' style={{width:"25rem",height:"8rem"}}>
+          <label className="form-check-label me-3"> Dinner</label>
+            <input class="form-check-input"
+              type="checkbox" id="checkbox1" name="option1" value="good"/>
+          </div>
+          <div className=' container d-flex justify-content-center align-items-center mt-3'>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{backgroundColor:"#378486"}}>
+  Submit
+</button>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Meal confirmation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div className='container ' style={{width:"auto",}} >
+         <table class="table table-striped table-secondary  table-bordered h-50 w-100 " >
+  <thead>
+    <tr>
+      <th scope="col">Meal Timing</th>
+      <th scope="col">Confirmation</th>    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     <td>Breakfast</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>Lunch</td>
+     <td></td>
+    </tr>
+   <tr>
+    <td>Dinner</td>
+    <td></td>
+   </tr>
+  </tbody>
+ 
+
+</table>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+        <button type="button" class="btn btn-primary" style={{backgroundColor:"#378486"}}>Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+          <button type="button" class="btn btn-outline-secondary">Preview</button>
+          <button type="button" class="btn btn-outline-secondary ">Preview Listing</button>
         </div>
 
       </div>
 
-    
+
     </div>
   )
 }

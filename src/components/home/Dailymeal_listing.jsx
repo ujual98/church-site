@@ -2,7 +2,7 @@ import React from 'react'
 
 function Dailymeal_listing() {
   return (
-    <div className='mt-5' style={{width:"auto",height:'100vh'}}>
+    <div className='container mt-5 ' style={{width:"auto",height:'100vh'}}>
         <center><h1>Employees Daily Meals Listing</h1></center><br />
         <table class="table table-bordered h-50 ">
   <thead class="thead-dark ">

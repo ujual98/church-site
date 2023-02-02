@@ -6,4 +6,4 @@ function Admin_home() {
   )
 }
 
-export default Admin_home
+export default Admin_home   
