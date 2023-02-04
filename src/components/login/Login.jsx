@@ -1,8 +1,6 @@
 import React from 'react'
 import './login.scss'
-import Pass from './passwordReset'
-import Otp from './Otp'
-import Home from '../home/home'
+
 
 
 function Login() {
