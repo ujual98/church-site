@@ -2,13 +2,13 @@ import React from 'react'
 
 function home() {
   return (
-    <div>
-      <div className=' w-auto vh-100 container d-flex justify-content-center align-items-center ' style={{ color:'#378486'}}>
+    <div className=' w-auto vh-100'>
+      <div className=' w-auto vh-75 mt-5 p-5 container border d-flex justify-content-center align-items-center ' style={{ color:'#ffffff',backgroundColor:"#00a388"}}>
       <div className='w-50 h-75  d-flex justify-content-center align-items-center border-end '>
-<img src="https://i.pinimg.com/564x/5b/dd/5a/5bdd5a909498f7f68f469e3afabcc33f.jpg" className='mb-5 py-1' style={{height:"500px",width:"auto",padding:"1rem"}} alt="" />
+<img src="https://i.pinimg.com/564x/5b/dd/5a/5bdd5a909498f7f68f469e3afabcc33f.jpg" className='mb-5 ' style={{height:"500px",width:"auto",padding:"1rem"}} alt="" />
       </div>
-      <div className='w-50 h-75 d-flex-column    justify-content-center align-items-center '>
-      <center>  <h2><u>Todays Meals</u></h2></center>
+      <div className='w-50 h-75 p-5 d-flex-column    justify-content-center align-items-center '>
+      <center>  <h2><u>What's for u today</u></h2></center>
 
 <div className=' container d-flex justify-content-center align-items-center' style={{ width: "25rem", height: "8rem",}}>
   <label className="form-check-label me-3"> Breakfast</label>
@@ -26,7 +26,7 @@ function home() {
     type="checkbox" id="checkbox1" name="option1" value="good" />
 </div>
 <div className=' container d-flex justify-content-center align-items-center mt-3'>
-  <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ backgroundColor: "#00a388" }}>
+  <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ backgroundColor: "#5d3a15" }}>
     Submit
   </button>
 
@@ -75,8 +75,8 @@ function home() {
 
       </div>
     </div>
-    <div className='d-flex justify-content-center align-items-center'>
-      <div className='w-50 h-25  d-flex justify-content-center align-items-center '>
+    <div className='d-flex justify-content-center align-items-center m-3' >
+      <div className='w-50 h-25  d-flex justify-content-center align-items-center ' >
     <button type="button" class="btn btn-outline-success me-3">Daily Meal Selection Preview</button>
     <button type="button" class="btn btn-outline-success align-self-center">Daily Meal Slection Listing</button>
     </div>
