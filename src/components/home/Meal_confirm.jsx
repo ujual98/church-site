@@ -2,8 +2,8 @@ import React from 'react'
 
 function Meal_confirm() {
   return (
-    <div className='container d-flex  justify-content-center align-items-center ' style={{width:"auto",height:"100vh"}} >
-         <table class="table table-striped table-secondary  table-bordered h-50 w-50" >
+    <div className='container p-5    '  >
+         <table class="table table-bordered " >
   <thead>
     <tr>
       <th scope="col">Meal timing</th>

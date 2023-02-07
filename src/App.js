@@ -18,7 +18,7 @@ function App()  {
      <Pass/>
      <Otp/>
      <Home/>
-     {/* <Meal_confirm/> */}
+     <Meal_confirm/>
      <Dailymeal_listing/> 
      <New_password/>
      <Dailymeal_view/>

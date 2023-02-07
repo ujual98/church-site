@@ -2,85 +2,203 @@ import React from 'react'
 
 function home() {
   return (
-    <div className=' w-auto vh-100'>
-      <div className=' w-auto vh-75 mt-5 p-5 container border d-flex justify-content-center align-items-center ' style={{ color:'#ffffff',backgroundColor:"#00a388"}}>
-      <div className='w-50 h-75  d-flex justify-content-center align-items-center border-end '>
-<img src="https://i.pinimg.com/564x/5b/dd/5a/5bdd5a909498f7f68f469e3afabcc33f.jpg" className='mb-5 ' style={{height:"500px",width:"auto",padding:"1rem"}} alt="" />
-      </div>
-      <div className='w-50 h-75 p-5 d-flex-column    justify-content-center align-items-center '>
-      <center>  <h2><u>What's for u today</u></h2></center>
+    <div className='container p-md-4 p-5'>
+      <h2 class="text-uppercase">
+        Choose your meals
+      </h2>
+      <h6 class="text-uppercase text-muted">
+        Daily Meal Chart
+      </h6>
+      <button class="btn btn-sm btn-secondary">
+        Back to My Meals
+      </button>
+      <hr />
+      <div class="py-2">
+        <p class="border-start ps-3">
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </small>
+        </p>
+        <div class="row mt-5">
+          <div class="col-12 col-md-6">
+            <div class="shadow rounded p-4 bg-primary-subtle">
+              <h5>My Selection On 16-01-2023</h5>
+              <p class="text-muted">
+                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
+              </p>
+              {/* <div class="alert alert-success" role="alert">
+                        <small><b>Whoo!</b> Your selection has been successfully updated.</small>
+                    </div> */}
+              <form>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="breakfast_checkbox" />
+                  <label class="form-check-label" for="breakfast_checkbox">
+                    Morning Breakfast
+                  </label>
+                </div>
+                <div id="emailHelp" class="form-text border-bottom pb-1 mt-0">
+                  <small>Breakfast will only available between 07:30 AM to 08:45 AM.</small>
+                </div>
+                <div class="form-check mt-2">
+                  <input class="form-check-input" type="checkbox" value="" id="lunch_checkbox" />
+                  <label class="form-check-label" for="lunch_checkbox">
+                    Noon Lunch
+                  </label>
+                </div>
+                <div id="emailHelp" class="form-text border-bottom pb-1 mt-0">
+                  <small>Lunch will only available between 12:30 PM to 02:30 PM.</small>
+                </div>
+                <div class="form-check mt-2 mb-0">
+                  <input class="form-check-input" type="checkbox" value="" id="dinner_checkbox" />
+                  <label class="form-check-label" for="dinner_checkbox">
+                    Evening Dinner
+                  </label>
+                </div>
+                <div id="emailHelp" class="form-text border-bottom pb-1 mt-0">
+                  <small>Dinner will only available between 04:30 PM to 08:30 PM.</small>
+                </div>
+                {/* <div class="alert alert-danger mt-4" role="alert">
+                            <small><b>Oops!</b> You can no longer make changes to your meal plan for today.</small>
+                        </div> */}
 
-<div className=' container d-flex justify-content-center align-items-center' style={{ width: "25rem", height: "8rem",}}>
-  <label className="form-check-label me-3"> Breakfast</label>
-  <input class="form-check-input"
-    type="checkbox" id="checkbox1" name="option1" value="good" />
-</div>
-<div className=' container d-flex justify-content-center align-items-center' style={{ width: "25rem", height: "8rem", }}>
-  <label className="form-check-label me-3"> Lunch</label>
-  <input className="form-check-input "
-    type="checkbox" id="checkbox1" name="option1" value="good" />
-</div>
-<div className=' container d-flex justify-content-center align-items-center' style={{ width: "25rem", height: "8rem",}}>
-  <label className="form-check-label me-3"> Dinner</label>
-  <input class="form-check-input"
-    type="checkbox" id="checkbox1" name="option1" value="good" />
-</div>
-<div className=' container d-flex justify-content-center align-items-center mt-3'>
-  <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style={{ backgroundColor: "#5d3a15" }}>
-    Submit
-  </button>
+                <button type="button" class="btn btn-primary btn-sm mt-3 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Save Meal Preferences
+                </button>
 
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-bordered " >
+                          <thead>
+                            <tr>
+                              <th scope="col">Meal timing</th>
+                              <th scope="col">Confirmation</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Breakfast</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Lunch</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Dinner</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
 
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Meal confirmation</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <br />
+            <div className='row justify-content-center shadow rounded mt-1 '>
+              <div className='col-3'> <button type="button" className="btn btn-secondary btn-sm mt-2 " >
+                 Daily Meals Log
+                </button></div>
+              <div className='col-3 '>
+              <button type="button" className="btn btn-secondary btn-sm mt-2">
+               Daily Meals Listing
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 ">
+            <div class="shadow rounded p-4 bg-success-subtle">
+              <h5>Total Meals Counted</h5>
+              <p class="text-muted">
+                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
+              </p>
+              <div class="row text-center text-uppercase">
+                <div class="col-4">
+                  <h1 class="display-5">25</h1>
+                  <h6>Breakfast</h6>
+                </div>
+                <div class="col-4 border-start border-end">
+                  <h1 class="display-5">32</h1>
+                  <h6>Lunch</h6>
+                </div>
+                <div class="col-4">
+                  <h1 class="display-5">12</h1>
+                  <h6>Dinner</h6>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="shadow rounded p-4 bg-danger-subtle">
+              <h5>Rules and Regulations</h5>
+              <p class="text-muted">
+                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
+              </p>
+              <div class="">
+                <div class="pb-2">
+                  <small>
+                    <b>1.</b> Everyone must Submit their meal preferences on time.
+                  </small>
+                </div>
+                <div class="pb-2">
+                  <small>
+                    <b>2.</b> If any employee has failed to submit their preferences before allocated time,They are asked to report to the Mess Department Head.
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <div className='container ' style={{ width: "auto", }} >
-            <table class="table  table-success  table-bordered h-50 w-100 " >
+      </div>
+      <hr />
+      <div class="py-2">
+        <div class="shadow rounded p-4">
+          <h5>Daily Meal Plan - Record</h5>
+          <p class="text-muted">
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
+          </p>
+          <div class="table-responsive">
+            <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th scope="col">Meal Timing</th>
-                  <th scope="col">Confirmation</th>
+                  <th scope="col">Meal Date</th>
+                  <th scope="col">Employee ID</th>
+                  <th scope="col">Employee Name</th>
+                  <th scope="col">Selected Meals</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Breakfast</td>
-                  <td></td>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
                 </tr>
                 <tr>
-                  <td>Lunch</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Dinner</td>
-                  <td></td>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>breakfast,lunch,dinner</td>
                 </tr>
               </tbody>
+
             </table>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
-          <button type="button" class="btn btn-primary" style={{ backgroundColor: "#378486" }}>Confirm</button>
-        </div>
       </div>
-    </div>
-  </div>
-</div >
-
-      </div>
-    </div>
-    <div className='d-flex justify-content-center align-items-center m-3' >
-      <div className='w-50 h-25  d-flex justify-content-center align-items-center ' >
-    <button type="button" class="btn btn-outline-success me-3">Daily Meal Selection Preview</button>
-    <button type="button" class="btn btn-outline-success align-self-center">Daily Meal Slection Listing</button>
-    </div>
-    </div>
     </div>
   )
 }
