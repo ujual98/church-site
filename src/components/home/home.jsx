@@ -14,14 +14,14 @@ function home() {
       </button>
       <hr />
       <div class="py-2">
-        <p class="border-start ps-3">
+        <p class="border-start ps-3 ">
           <small>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </small>
         </p>
         <div class="row mt-5">
           <div class="col-12 col-md-6">
-            <div class="shadow rounded p-4 bg-primary-subtle">
+            <div class="shadow rounded p-4 ">
               <h5>My Selection On 16-01-2023</h5>
               <p class="text-muted">
                 <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
@@ -108,20 +108,24 @@ function home() {
               </form>
             </div>
             <br />
-            <div className='row justify-content-center shadow rounded mt-1 '>
-              <div className='col-3'> <button type="button" className="btn btn-secondary btn-sm mt-2 " >
-                 Daily Meals Log
-                </button></div>
+            <div className='row shadow rounded '>
+<h5 className='ms-3 p-1'>Daily Meal Plan-Log</h5>
+              <small><p className='text-muted'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque earum aliquam distinctio quam accusantium illum voluptatibus alias quidem tenetur quas iure, quod corrupti. Ipsum autem voluptatem odit? Quod, laudantium.</p></small>
+              <div className='col-3'> 
+              <button type="button" className="btn btn-secondary btn-sm mt-2 " >
+                Daily Meals Log
+              </button>
+              </div>
               <div className='col-3 '>
-              <button type="button" className="btn btn-secondary btn-sm mt-2">
-               Daily Meals Listing
+                <button type="button" className="btn btn-secondary btn-sm mt-2">
+                  Daily Meals Listing
                 </button>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 ">
-            <div class="shadow rounded p-4 bg-success-subtle">
+            <div class="shadow rounded p-4 bg-primary-subtle">
               <h5>Total Meals Counted</h5>
               <p class="text-muted">
                 <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
@@ -142,7 +146,7 @@ function home() {
               </div>
             </div>
             <br />
-            <div class="shadow rounded p-4 bg-danger-subtle">
+            <div class="shadow rounded p-4 ">
               <h5>Rules and Regulations</h5>
               <p class="text-muted">
                 <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small>
