@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Dailymeal_listing() {
+  
   return (
     <div className='container mt-5 ' style={{width:"auto",height:'100vh'}}>
         <center><h1>Employees Daily Meals Listing</h1></center><br />

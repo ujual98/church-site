@@ -29,9 +29,10 @@ function home() {
               {/* <div class="alert alert-success" role="alert">
                         <small><b>Whoo!</b> Your selection has been successfully updated.</small>
                     </div> */}
-              <form>
+              <form action='http://192.168.10.53/tserver/mealselect.php' method='post' encType='multipart/form-data'>
+                <input type="text" hidden='true' name='employee_name' value="Rishi (1001)"/>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="breakfast_checkbox" />
+                  <input class="form-check-input" type="checkbox" name="breakfast" id="breakfast_checkbox" />
                   <label class="form-check-label" for="breakfast_checkbox">
                     Morning Breakfast
                   </label>
@@ -40,7 +41,7 @@ function home() {
                   <small>Breakfast will only available between 07:30 AM to 08:45 AM.</small>
                 </div>
                 <div class="form-check mt-2">
-                  <input class="form-check-input" type="checkbox" value="" id="lunch_checkbox" />
+                  <input class="form-check-input" type="checkbox" name="lunch" id="lunch_checkbox" />
                   <label class="form-check-label" for="lunch_checkbox">
                     Noon Lunch
                   </label>
@@ -49,7 +50,7 @@ function home() {
                   <small>Lunch will only available between 12:30 PM to 02:30 PM.</small>
                 </div>
                 <div class="form-check mt-2 mb-0">
-                  <input class="form-check-input" type="checkbox" value="" id="dinner_checkbox" />
+                  <input class="form-check-input" type="checkbox" name="dinner" id="dinner_checkbox" />
                   <label class="form-check-label" for="dinner_checkbox">
                     Evening Dinner
                   </label>
@@ -61,7 +62,7 @@ function home() {
                             <small><b>Oops!</b> You can no longer make changes to your meal plan for today.</small>
                         </div> */}
 
-                <button type="button" class="btn btn-primary btn-sm mt-3 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="submit" class="btn btn-primary btn-sm mt-3 " data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Save Meal Preferences
                 </button>
 
@@ -108,17 +109,17 @@ function home() {
               </form>
             </div>
             <br />
-            <div className='row shadow rounded '>
+            <div className=' shadow rounded p-4 '>
 <h5 className='ms-3 p-1'>Daily Meal Plan-Log</h5>
               <small><p className='text-muted'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque earum aliquam distinctio quam accusantium illum voluptatibus alias quidem tenetur quas iure, quod corrupti. Ipsum autem voluptatem odit? Quod, laudantium.</p></small>
-              <div className='col-3'> 
+              <div className=' mb-1'> 
               <button type="button" className="btn btn-secondary btn-sm mt-2 " >
                 Daily Meals Log
               </button>
               </div>
-              <div className='col-3 '>
+              <div className='d-flex align-self-center   mb-1 '>
                 <button type="button" className="btn btn-secondary btn-sm mt-2">
-                  Daily Meals Listing
+                  Daily Meals List
                 </button>
               </div>
             </div>
@@ -154,14 +155,17 @@ function home() {
               <div class="">
                 <div class="pb-2">
                   <small>
-                    <b>1.</b> Everyone must Submit their meal preferences on time.
+                    <b>1.</b>There is a scheduled time for every employee for meal selection.  
                   </small>
                 </div>
                 <div class="pb-2">
                   <small>
-                    <b>2.</b> If any employee has failed to submit their preferences before allocated time,They are asked to report to the Mess Department Head.
+                    <b>2.</b> Everyone must Submit their meal preferences on time.
                   </small>
                 </div>
+                <div className='pb-2'>
+                 <small> <b>3.</b>If any employee has failed to submit their preferences before allocated time,They are asked to report to the Mess Department Head.</small>
+                </div><br />
               </div>
             </div>
           </div>
